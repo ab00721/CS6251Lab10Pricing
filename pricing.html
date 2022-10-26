@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Pacific Trails Resort :: Pricing</title>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Pacific Trails Resort offers you glamping in spacious and well-appointed private Yurts. All luxury campsites have an ocean view. Enjoy the zen and natural beauty of Big Sur at Pacific Trails Resort.">
+  <link rel="stylesheet" href="pacific.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <header>
+      <h1>Pacific Trails Resort</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yurts.html">Yurts</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <h2>Pricing</h2>
+
+      <div id="price-result" class="display-none">
+        <table class="pricing">
+          <tr>
+            <td>Total before tax:</td>
+            <td id="price-value" class="price"></td>
+          </tr>
+          <tr>
+            <td>Taxes and fees:</td>
+            <td id="taxes-value" class="price"></td>
+          </tr>
+          <tr>
+            <td>Total:</td>
+            <td id="total-value" class="price"></td>
+          </tr>
+        </table>
+      </div>
+      
+      <form>
+        <label for="num-guests">Number guests:</label>
+        <input type="number" id="num-guests" name="num-guests">
+        <div class="error display-none" id="guests-error">Enter a valid number &gt; 0.</div>
+        <label for="num-nights">Number nights (at least 2 nights):</label>
+        <input type="number" id="num-nights" name="num-nights">
+        <div class="error display-none" id="nights-error">Enter a valid number &gt; 1.</div>
+        <label for="breakfast">Breakfast:</label>
+        <input type="checkbox" id="breakfast" name="breakfast" value="breakfast">
+        <label for="dinner">Dinner:</label>
+        <input type="checkbox" id="dinner" name="dinner">
+        <div id="price-button">Calculate Cost</div>
+      </form>
+
+    </main>
+
+    <footer>
+      Copyright &copy; 2018 Pacific Trails Resort<br>
+      <a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
+    </footer>
+    
+  </div>
+
+  <script src="./js/pricing.js"></script>
+</body>
+
+</html>
